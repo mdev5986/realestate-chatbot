@@ -28,7 +28,7 @@ async function fetchPropertiesFromAPI() {
   const queryParams = new URLSearchParams({
     return: 'results,pagination,facets',
     sort: '-created_at',
-    "per-page": '50'
+    "per-page": '20'
   });
 
   const response = await fetch(
