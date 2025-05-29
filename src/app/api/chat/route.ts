@@ -27,7 +27,8 @@ const functions: OpenAI.Chat.Completions.ChatCompletionCreateParams.Function[] =
 async function fetchPropertiesFromAPI() {
   const queryParams = new URLSearchParams({
     return: 'results,pagination,facets',
-    sort: '-created_at'
+    sort: '-created_at',
+    "per-page": '50'
   });
 
   const response = await fetch(
