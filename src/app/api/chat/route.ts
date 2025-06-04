@@ -39,7 +39,7 @@ async function fetchPropertiesFromAPI() {
     return: 'results,pagination,facets',
     sort: '-created_at',
     "per-page": '50',
-    "page": '1'
+    "page": '2'
   });
 
   const response = await fetch(
